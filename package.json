@@ -1,0 +1,31 @@
+{
+  "name": "Grazielly-Fernandes-Advocacia",
+  "version": "1.0.0",
+  "description": "Site de advocacia passando por diversos processos na criação. Pesquisa de UX, criação da interface no Figma, Desenvolvimentos utilizando o Next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipebfernandes92/Grazielly-Fernandes-Advocacia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipebfernandes92/Grazielly-Fernandes-Advocacia/issues"
+  },
+  "homepage": "https://github.com/felipebfernandes92/Grazielly-Fernandes-Advocacia#readme",
+  "dependencies": {
+    "next": "^10.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.5",
+    "typescript": "^4.2.4"
+  }
+}
