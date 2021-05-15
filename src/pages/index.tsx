@@ -11,6 +11,10 @@ export default function Home() {
     setCount(count - 1);
   }
 
+  function zerar() {
+    setCount(0);
+  }
+
   const isDisabled = (count <= 0);
 
   return (
@@ -19,6 +23,7 @@ export default function Home() {
       <p>Contador { count }</p>
       <button onClick={adicionar}>Adicionar</button>
       <button onClick={remover} disabled={isDisabled}>Remover</button>
+      <button onClick={zerar} disabled={isDisabled}>Zerar</button>
     </>
   )
 }
