@@ -19,6 +19,7 @@ export default function Home() {
 
   return (
     <>
+      <h1>!!! HOMOLOGAÇÃO!!!</h1>
       <p>Hello World!</p>
       <p>Contador { count }</p>
       <button onClick={adicionar}>Adicionar</button>
