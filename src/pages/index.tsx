@@ -1,29 +1,46 @@
-import { useState } from "react"
+import Image from 'next/image';
+import styles from '../styles/pages/Home.module.css';
 
 export default function Home() {
-  const [ count, setCount ] = useState(0);
-
-  function adicionar() {
-    setCount(count + 1);
-  }
-
-  function remover() {
-    setCount(count - 1);
-  }
-
-  function zerar() {
-    setCount(0);
-  }
-
-  const isDisabled = (count <= 0);
 
   return (
-    <>
-      <p>Hello World!</p>
-      <p>Contador { count }</p>
-      <button onClick={adicionar}>Adicionar</button>
-      <button onClick={remover} disabled={isDisabled}>Remover</button>
-      <button onClick={zerar} disabled={isDisabled}>Zerar</button>
-    </>
+    <div className={styles.presentation}>
+      <div className={'container ' + styles.firstPage}>
+        <header>
+          <Image
+            layout="fixed"
+            quality="100"
+            src="/images/logo.png"
+            width={222}
+            height={110}
+          />
+          <nav className={styles.menu}>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Sobre</a></li>
+              <li><a href="">Serviços</a></li>
+              <li><a href="">Atendimento</a></li>
+              <li><a href="">Contato</a></li>
+            </ul>
+          </nav>
+          <nav className={styles.social}>
+            <ul>
+              <li><a href="">Insta</a></li>
+              <li><a href="">Whats</a></li>
+              <li><a href="">Face</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div className={styles.main}>
+          <Image
+              layout="fill"
+              objectFit="contain"
+              objectPosition="right 100px bottom 0"
+              src="/images/perfil.svg"
+            />
+          </div>
+      </div>
+    </div>
   )
 }
