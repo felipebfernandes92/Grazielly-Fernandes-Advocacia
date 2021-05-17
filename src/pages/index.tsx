@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from '../styles/pages/Home.module.css';
+import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai';
 
 export default function Home() {
 
@@ -25,18 +26,20 @@ export default function Home() {
           </nav>
           <nav className={styles.social}>
             <ul>
-              <li><a href="">Insta</a></li>
-              <li><a href="">Whats</a></li>
-              <li><a href="">Face</a></li>
+              <li><a target="_blank" href="https://api.whatsapp.com/send?phone=5548999201489"><AiOutlineWhatsApp size="1.75rem" /></a></li>
+              <li><a target="_blank" href="https://www.instagram.com/graziellyadvogada/"><AiOutlineInstagram size="1.75rem" /></a></li>
+              <li><a target="_blank" href="https://www.facebook.com/graziellyadvogada"><AiOutlineFacebook size="1.75rem" /></a></li>
             </ul>
           </nav>
         </header>
 
         <div className={styles.main}>
+          <h1>Grazielly F Fernandes</h1>
+          <h2>Advogada / Mediadora / Consultora Jurídica</h2>
           <Image
               layout="fill"
               objectFit="contain"
-              objectPosition="right 100px bottom 0"
+              objectPosition="right 3rem bottom 0"
               src="/images/perfil.svg"
             />
           </div>
