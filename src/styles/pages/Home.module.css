@@ -113,6 +113,30 @@
     background: var(--gray-medium);
 }
 
+.services h2 {
+    color: var(--white);
+    font-weight: 600;
+    margin-top: 6rem;
+    margin-left: -3rem;
+    font-size: 300%;
+    text-transform: uppercase;
+    letter-spacing: .625rem;
+    position: relative;
+    z-index: 1;
+}
+
+.services h2 span {
+    position: absolute;
+    z-index: -1;
+    top: -60px;
+    left: -30px;
+    font-size: 300%;
+    padding: 0;
+    line-height: 1;
+    color: var(--gray-medium);
+    text-shadow: -2px 0 var(--purple), 0 2px var(--purple), 2px 0 var(--purple), 0 -2px var(--purple);
+}
+
 .coverage {
     background: var(--white);
 }
@@ -153,4 +177,49 @@
 
 .contact {
     background: var(--purple);
+}
+
+.contact h2 {
+    color: var(--white);
+    font-weight: 600;
+    margin-top: 6rem;
+    margin-left: -3rem;
+    font-size: 300%;
+    text-transform: uppercase;
+    letter-spacing: .625rem;
+    position: relative;
+    z-index: 1;
+}
+
+.contact h2 span {
+    position: absolute;
+    z-index: -1;
+    top: -45px;
+    left: -45px;
+    font-size: 300%;
+    padding: 0;
+    line-height: 1;
+    color: var(--purple);
+    text-shadow: -2px 0 var(--white), 0 2px var(--white), 2px 0 var(--white), 0 -2px var(--white);
+}
+
+.contact .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 4rem;
+}
+
+.contact .grid .infos {
+    color: var(--white);
+    padding-top: 6rem;
+}
+
+.contact .grid .infos p {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.contact .grid .form {
+    background-color: var(--white);
+    padding: 2rem;
 }

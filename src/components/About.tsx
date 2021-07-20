@@ -5,8 +5,8 @@ export default function About() {
         <div className={ styles.about }>
             <div className={'container'}>
                 <h2>
-                Sobre
-                <span>Sobre</span>
+                    Sobre
+                    <span>Sobre</span>
                 </h2>
                 <div className={ styles.box }>
                 <p>
